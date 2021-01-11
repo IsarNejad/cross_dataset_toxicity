@@ -3,8 +3,6 @@ Paper associated with this code repository:
 Isar Nejadgholi and Svetlana Kiritchenko (2020) On Cross-Dataset Generalization in Automatic Detection of Online Abuse - WOAH2020 Shared Exploration: Bias and Unfairness in the Detection of Online Abuse 
 
 
-Copyright (C) 2020 National Research Council Canada (NRC)
-
 *****************************************************
 Description: 
 
@@ -24,13 +22,3 @@ Contact:
 
 isar.Nejadgholi@nrc-cnrc.gc.ca 
 
-*****************************************************
-Terms of Use: 
-
-1. The code can be used freely for non-commercial research and educational purposes.
-
-2. Do not redistribute the code. 
-
-3. National Research Council Canada (NRC) disclaims any responsibility for the use of the codes listed here and does not provide technical support. 
-
-***************************************
