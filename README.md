@@ -1,3 +1,5 @@
+# A pruned version of the Wiki-toxicity dataset
+
 This repository presents the code and data discussed in the following publication:
  
 Isar Nejadgholi and Svetlana Kiritchenko (2020) On Cross-Dataset Generalization in Automatic Detection of Online Abuse - WOAH2020 Shared Exploration: Bias and Unfairness in the Detection of Online Abuse (also availabel at https://arxiv.org/abs/2010.07414)
