@@ -8,17 +8,7 @@ Isar Nejadgholi and Svetlana Kiritchenko (2020) On Cross-Dataset Generalization 
 Copyright (C) 2020 National Research Council Canada (NRC)
 
 *****************************************************
-Description: 
-
-__*topics.pdf*__: shows the 20 topics extracted from [*Wiki*-dataset labeled for toxicity](https://figshare.com/articles/dataset/Wikipedia_Talk_Labels_Toxicity/4563973). Each topic is represented by 10 keywords.  
-
-
-__*wiki_lda_topics.ipynb*__: trains an LDA topic model on the [*Wiki*-dataset labeled for toxicity](https://figshare.com/articles/dataset/Wikipedia_Talk_Labels_Toxicity/4563973). Then, uses this model to find the distribution of topics in two other datasets *Waseem*-dataset and *Founta*-dataset. This notebook can be run on Google-colab. 
-
-__*wiki_toxicity_topics.csv*__: each row corresponds to one comment of the [*Wiki*-dataset labeled for toxicity](https://figshare.com/articles/dataset/Wikipedia_Talk_Labels_Toxicity/4563973) including comment id, topic number with the highest probability for that comment and the associated probability. 
-
-*****************************************************
-This work suggests that training samples that belong to topic numbers 3, 4, 5, 6, 10, 11, 13, 15, 17, 18, 19 are primarily negative (benign) examples concerning Wikipedia-specific topics and have little impact on the performance of the toxicity classifier. These examples can be removed to obtain a pruned version of this dataset for faster training procedures. 
+This work presents a pruned version of the [*Wiki*-dataset labeled for toxicity](https://figshare.com/articles/dataset/Wikipedia_Talk_Labels_Toxicity/4563973). We showed that 54% of the training samples belong to topic numbers 3, 4, 5, 6, 10, 11, 13, 15, 17, 18, 19, which are mostly negative (benign) examples concerning Wikipedia-specific topics and have little impact on the performance of the toxicity classifier. These examples can be removed to obtain a pruned version of this dataset for faster training procedures. 
 
 ##  Code to generate the pruned training set:
 
@@ -50,7 +40,17 @@ toxic_train_pruned = data[data['split']=='train' ][data['wiki_topic'].isin(topic
 toxic_test = data[data['split']=='test']
 toxic_dev = data[data['split']=='dev']
 ```
+*****************************************************
+File description: 
 
+__*topics.pdf*__: shows the 20 topics extracted from *Wiki*-dataset. Each topic is represented by 10 keywords.  
+
+
+__*wiki_lda_topics.ipynb*__: trains an LDA topic model on the *Wiki*-dataset. Then, uses this model to find the distribution of topics in two other datasets *Waseem*-dataset and *Founta*-dataset. This notebook can be run on Google-colab. 
+
+__*wiki_toxicity_topics.csv*__: each row corresponds to one comment of the *Wiki*-dataset, including comment id, topic number with the highest probability for that comment and the associated probability. 
+
+****************************************************
 For more information, please refer to the paper. 
 
 Contact: 
