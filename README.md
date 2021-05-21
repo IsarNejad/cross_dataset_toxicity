@@ -12,7 +12,7 @@ This work presents a pruned version of the [*Wiki*-dataset labeled for toxicity]
 
 ##  Code to generate the pruned training set:
 
-```
+```python
 import pandas as pd
 import re
 
